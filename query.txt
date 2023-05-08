@@ -1,0 +1,5 @@
+SELECT date, 
+recovered, deaths, extract(month FROM date) AS month
+FROM `bigquery-public-data.covid19_italy.data_by_region`
+ORDER BY month
+
